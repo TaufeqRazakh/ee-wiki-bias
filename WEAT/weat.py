@@ -2,7 +2,7 @@ import numpy as np
 from gensim.models import KeyedVectors
 import gensim
 import random
-import read_config
+# import read_config
 import sys
 import glob
 import os
@@ -95,7 +95,10 @@ if __name__ == '__main__':
 
 
     results = {}
-    config = read_config.read_json_config(fname)
+    # config = read_config.read_json_config(fname)
+    with open(fname) as f:
+        config = json.load(f)
+        
     for e_name, e in config['embeddings'].items():
         results[e_name] = {}
         if not isinstance(e,dict):
@@ -123,6 +126,6 @@ if __name__ == '__main__':
                     if mean is not None:
                         results[e_name][time][name_of_test] = (str(round(mean, 4)), str(round(err,4)))
 
-        results_file_split = results_file.split('/')[1]
+        # results_file_split = results_file.split('/')[1]
         with open('results/wedding_glove', 'w+') as outfile:
             json.dump(results, outfile)
