@@ -17,7 +17,12 @@ Please cite us if you find any of these content useful.
 
 ## Dependencies
 
-- Python>=3.7.6
+When using Python>=3.7.6, ensure to download the follwing packages into your python developent environment either with pip3 or conda (depending on the development tools you use)
+- pandas
+- spacy
+- seaborn
+- matplotlib
+- gensim
 
 
 
