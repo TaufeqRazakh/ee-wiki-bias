@@ -33,7 +33,7 @@ When using Python>=3.7.6, ensure to download the follwing packages into your pyt
 
 
 
-## Data
+## Data & Download
 
    ### Complete Corpus 
 
