@@ -28,8 +28,11 @@ When using Python>=3.7.6, ensure to download the follwing packages into your pyt
 
 ## Code
 
-1. **Analysis Pipeline**. We demostrate our analysis framework for **Personal Life** section in `personal-life-reproduce.ipynb`, where you can find the code for key steps that we are using in the paper, including *Acquire templates by name swaping, odds ratio calculation, replicate figures as Figure1, and etc* .   
-2. **WEAT calculation**. The code for replicating our WEAT calculation is under `WEAT.py`, please see how to use in `./weat.sh` to replicate the result. You can simply change the list of dictionary in `artists.json` and use our script to measure the associated gender bias of any two lists of attributes. 
+1. **Analysis Pipeline**. 
+  - The authors original code and results are duplicated in `original.ipynb`. These contain the key steps used in the paper - including acquire and populate templates by name swaping, odds ratio calculation, replicate figures.
+  -  The results from our reproduction are in `reproduce.ipynb`.
+  -  Finally, the code and results for the ablation study are in the file `ablate.ipynb`.
+3. **WEAT calculation**. The code for replicating our WEAT calculation is under `WEAT.py`, please see how to use in `./weat.sh` to replicate the result. You can simply change the list of dictionary in `artists.json` and use our script to measure the associated gender bias of any two lists of attributes. 
 
 
 
